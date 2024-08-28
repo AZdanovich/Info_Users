@@ -1,0 +1,31 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Информация о пользователе GitHub</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Информация о пользователе GitHub</h1>
+    <div class="container">
+      <div id="button">
+        <input
+          type="text"
+          id="username-input"
+          placeholder="Введите имя пользователя GitHub"
+        />
+        <button id="fetch-user">Получить информацию</button>
+      </div>
+
+      <div id="user-info">
+        <img id="avatar" alt="Аватар" style="width: 100px" />
+        <strong id="user-name"></strong><br />
+        <a id="github-link" target="_blank">Профиль на GitHub</a><br />
+        <p>Дата регистрации: <span id="registration-date"></span></p>
+        <p>Количество репозиториев: <span id="repo-count"></span></p>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
